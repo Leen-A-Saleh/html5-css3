@@ -1,0 +1,268 @@
+*{margin:0;
+padding:0;
+box-sizing: border-box;}
+@font-face{src:url('../../metropolis/Metropolis-Medium.otf');
+font-family:hello}
+
+body{font-family:hello;
+    
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+.row{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+a{
+    text-decoration:none; 
+}
+.small{
+    text-transform:lowercase;
+}
+ul{
+    list-style:none;
+}
+.btn{
+background-color:#0061f2;
+color:#ffffff;
+padding:10px 16px;
+border-radius:5px;
+text-transform:capitalize;
+letter-spacing:1px;
+border: 1px solid #0061f2;
+transition:.5s;
+}
+.btn:hover{
+    background-color:#0052ce;
+    border:1px solid #0052ce;
+    cursor: pointer;
+}
+
+/* navbar */
+.div{
+    background-color:#0061f2;
+    width: 100%;
+    height:50px;
+}
+nav{
+    
+    padding:28px 0;
+    position:sticky;top:0;z-index:999999;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+nav .logo{
+   width:20%;
+   text-transform:uppercase;
+   color: #0061f2;
+}
+nav .list{
+    display: flex;
+    width:60%;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+
+nav .list li{
+    margin-right:28px;
+    transition:1s;
+}
+nav .list li:hover i{
+transform:translateX(-5px);
+}
+nav .fas{
+    font-size:13px;
+    margin-left:8px;
+}
+nav .list a{
+    text-transform: capitalize;
+    color:rgba(0,0,0,.55);
+}
+    nav .list .dropdown{
+position:absolute;
+width:90px;
+padding:15px 0;
+top:50px;
+opacity:0;
+transition:.5s;
+background-color:#ffffff;
+box-shadow:-10px 0px 3px #e8e2e2;
+text-align: center;
+}
+nav .list .item{
+    position: relative;
+    
+}
+nav .list .item:hover .dropdown{
+    opacity:1;
+    top:20px
+}
+/* end nav */
+/* start header */
+.spanb{
+    text-transform: capitalize;
+}
+
+@keyframes leen{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+header .content{
+    width:60%;
+    animation: leen 1s;
+    
+}
+header .img{
+    width:40%;
+   
+}
+header h1{
+    color:#363d47;
+    font-weight:500;
+    font-size:40px;
+    margin-bottom: 20px;
+}
+header p{
+    width:80%;
+  line-height:1.5;
+  margin-bottom: 30px;
+  color:#6c757d;
+  margin-top:10px;
+}
+header input:nth-child(1){
+width:60%;
+padding:10px;
+border-radius:4px;
+background-color:#eef2f8;
+border-color:#eef2f8;
+border:0;
+margin-right:10px;
+}
+header input:nth-child(1):hover{
+border:5px solid #0061f2;color: white;
+}
+/* end header */
+/* start section 1 */
+.sec{
+background-color:#f2f6fc;
+padding:170px 0 50px;
+position: relative;
+}
+.sec::before{
+    content:'';
+    background-color:#ffffff;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    border-bottom-left-radius:35% ;
+    border-bottom-right-radius:35% ;
+}
+.sec .box{
+    text-align: center;
+    width:30%;
+}
+.sec .box .icon{
+    background-color: salmon;
+    width:80px;
+    height:80px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:12px;
+    background:linear-gradient(135deg,#0061f2,rgba(105,0,199,.8));
+color: #ffffff;
+font-size:25px;
+
+}
+.sec h2{
+font-weight:500;
+color:#363d47;
+margin-bottom:15px;
+}
+.box p{
+    color:#6c757d;
+}
+/* end section 1 */
+/* start footer */
+footer{
+    background-color: #0061f2;
+    color: #ffffff99;
+    padding:150px 0;
+    position: relative;
+    margin-top: 0px;
+}
+footer::before{
+    content:'';
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top:0;
+    background-color:#f2f6fc;
+    border-bottom-left-radius:35%;
+    border-bottom-right-radius:35%;
+    
+}
+footer .footer-top .row{
+align-items: flex-start;
+padding-bottom: 50px;
+}
+footer .footer-top .footer-item p{
+    margin: 10px 0;
+
+}
+footer .footer-top .footer-item .icon-social{
+margin-left: 8px;
+color:#ffffff99;
+transition: 1.5s;
+display: inline-block;
+}
+footer .footer-top .footer-item .icon-social:hover{
+    transform: rotatey(180deg);
+}
+footer .footer-top .footer-item h3{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+footer .footer-top .footer-item a{
+    color: #ffffff99;
+    display: inline-block;
+    margin: 10px 0 0 ;
+    transition: .5s;
+}
+footer .footer-top .footer-item a:hover{
+    transform: translateX(15px);
+}
+.footer-bottom{
+    margin-top:35px;
+    font-size:12px;
+}
+.footer-bottom .footer-footer a{
+    color:#ffffff99;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
